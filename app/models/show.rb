@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base
-end
+
 def highest_rating
   show = Show.maximum(:rating)
   show.rating
@@ -31,5 +31,6 @@ end
 
 def show_by_alphabetical_order
   Show.order(:name).map { |n| n.name }
+end
 end
 
