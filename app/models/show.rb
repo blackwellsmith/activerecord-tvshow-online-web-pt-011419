@@ -1,8 +1,8 @@
 require "pry"
 class Show < ActiveRecord::Base
 
-  def highest_rating
-    binding.pry
+  def self.highest_rating
+    #binding.pry
     show = Show.maximum("rating")
    # binding.pry
     show.rating
