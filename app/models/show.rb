@@ -27,11 +27,11 @@ end
 def popular_shows
   Show.where(:rating < 5).map {|s| s.name}
   end
-end
+
 
 def show_by_alphabetical_order
   Show.order(:name).map { |n| n.name }
-end
+
 end
 end
 
