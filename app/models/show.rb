@@ -23,6 +23,10 @@ def ratings_sum
 end
 
 def popular_shows
-  Show.where(rating < 5).map {|s| }
+  Show.where(rating < 5).map {|s| s.name}
+  end
+end
+
+def show_by_alphabetical_order
 end
 
