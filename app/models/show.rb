@@ -29,6 +29,7 @@ class Show < ActiveRecord::Base
 
   def self.popular_shows
     Show.where( 'rating' > 5).map {|s| s}
+    
   end
 
 
