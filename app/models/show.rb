@@ -7,3 +7,5 @@ def most_popular_show
   show = Show.maximum(rating)
   show.name
 end
+
+def 
