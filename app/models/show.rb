@@ -9,4 +9,6 @@ def most_popular_show
 end
 
 def lowest_rating
-  
+  sad_show = Show.minimum(rating)
+  sad_show.rating
+end
