@@ -1,5 +1,4 @@
 class Show < ActiveRecord::Migration[4.2]
-  attr_reader :name, :network, :day, :rating
   def change
     create_table :shows do |t|
       t.string  :name
