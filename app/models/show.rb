@@ -1,32 +1,33 @@
 def highest_rating
-  show = Show.maximum(rating)
+  show = Show.maximum(:rating)
   show.rating
 end
 
 def most_popular_show
-  show = Show.maximum(rating)
+  show = Show.maximum(:rating)
   show.name
 end
 
 def lowest_rating
-  sad_show = Show.minimum(rating)
+  sad_show = Show.minimum(:rating)
   sad_show.rating
 end
 
 def least_popular_show
-  sad_show = Show.minimum(rating)
+  sad_show = Show.minimum(:rating)
   sad_show.name
 end
 
 def ratings_sum
-  Show.sum(rating)
+  Show.sum(:rating)
 end
 
 def popular_shows
-  Show.where(rating < 5).map {|s| s.name}
+  Show.where(:rating < 5).map {|s| s.name}
   end
 end
 
 def show_by_alphabetical_order
+  Show.order(:name).map { |n| n.name }
 end
 
