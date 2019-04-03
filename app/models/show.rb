@@ -29,7 +29,7 @@ class Show < ActiveRecord::Base
   end
 
 
-  def show_by_alphabetical_order
+  def shows_by_alphabetical_order
     Show.order(:name).map { |n| n.name }
 
   end
