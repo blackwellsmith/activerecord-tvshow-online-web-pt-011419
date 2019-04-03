@@ -21,3 +21,6 @@ end
 def ratings_sum
   Show.sum(rating)
 end
+
+def popular_shows
+end
