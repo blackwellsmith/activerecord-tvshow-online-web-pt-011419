@@ -17,3 +17,7 @@ def least_popular_show
   sad_show = Show.minimum(rating)
   sad_show.name
 end
+
+def ratings_sum
+  Show.sum(rating)
+end
