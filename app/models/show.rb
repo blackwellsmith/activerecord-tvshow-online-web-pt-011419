@@ -3,10 +3,10 @@ class Show < ActiveRecord::Base
 
   def self.highest_rating
     #binding.pry
-    show = Show.maximum("rating")
+    show = Show.maximum(:rating)
    # binding.pry
     show.rating
-    binding.pry
+   # binding.pry
   end
 
   def most_popular_show
