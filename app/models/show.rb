@@ -8,4 +8,4 @@ def most_popular_show
   show.name
 end
 
-def 
+def lowest_rating
