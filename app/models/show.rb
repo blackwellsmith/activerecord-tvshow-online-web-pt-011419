@@ -4,6 +4,7 @@ class Show < ActiveRecord::Base
   def highest_rating
     show = Show.maximum("rating")
     show.rating
+    binding.pry
   end
 
   def most_popular_show
